@@ -25,7 +25,7 @@
 body {
   line-height: 1.5;
   color: black;
-  background-color: var(--Light-Grayish-Blue);
+  background-color: var(--Very-Light-Gray);
   font-family: var(--font-family);
 }
 
@@ -43,12 +43,14 @@ li {
   padding: 1rem;
   overflow: hidden;
   margin: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .heading-primary {
   font-weight: 400;
-  font-size: 45px;
-  width: 400px;
+  font-size: 48px;
+  width: 480px;
   height: 120px;
   line-height: 1.4;
   margin-bottom: 40px;
@@ -84,7 +86,7 @@ li {
 
 .para-primary,
 .para-secondary {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--Grayish-Blue);
   margin-bottom: 40px;
   width: 430px;
@@ -152,4 +154,22 @@ li {
 
 .parent-nav .second-content .nav-links li a:hover {
   border-bottom: 3px solid var(--Lime-Green);
+  opacity: 0.7;
+}
+
+/* Header section */
+.main-header {
+  height: 665px;
+  background: url("../images/bg-intro-desktop.svg") no-repeat 890px -260px;
+}
+
+.main-header .parent-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+
+.main-header .parent-content .first-content {
+  width: 100%;
 }
