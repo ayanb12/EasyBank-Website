@@ -319,3 +319,59 @@ li {
   color: var(--Light-Grayish-Blue);
   font-size: 14px;
 }
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .main-header {
+    position: relative;
+  }
+  .main-header .parent-content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+  }
+
+  .main-header .parent-content .first-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-header .parent-content .second-content {
+    position: absolute;
+    background: url("../images/bg-intro-mobile.svg") no-repeat center center;
+    top: -130px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .main-header .parent-content .second-content .mockup {
+    position: absolute;
+    width: 90%;
+    height: 68%;
+    top: -2px;
+    left: 20px;
+  }
+
+  .heading-primary {
+    font-weight: 400;
+    font-size: 30px;
+    width: 280px;
+    height: 80px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    color: var(--Dark-Blue);
+  }
+
+  .para-primary,
+  .para-secondary,
+  .para-choose {
+    font-size: 14px;
+    color: var(--Grayish-Blue);
+    margin-bottom: 40px;
+    width: 320px;
+    height: 50px;
+  }
+}
