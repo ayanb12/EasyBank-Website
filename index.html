@@ -17,6 +17,10 @@
   </head>
 
   <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
     <nav class="main-nav">
       <div class="container">
         <div class="parent-nav">
@@ -214,5 +218,23 @@
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.querySelector(".menu-btn").addEventListener("click", () => {
+        const selectUl = document.querySelector(".nav-links");
+
+        if (selectUl.classList.contains("show")) {
+          selectUl.classList.remove("show");
+        } else {
+          selectUl.classList.add("show");
+        }
+      });
+    </script>
   </body>
 </html>
